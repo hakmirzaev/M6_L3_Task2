@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0E30334F29392B13001CE7D9 /* M6_L3_Task2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30334E29392B13001CE7D9 /* M6_L3_Task2App.swift */; };
-		0E30335129392B13001CE7D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30335029392B13001CE7D9 /* ContentView.swift */; };
 		0E30335329392B15001CE7D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E30335229392B15001CE7D9 /* Assets.xcassets */; };
 		0E30335629392B15001CE7D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E30335529392B15001CE7D9 /* Preview Assets.xcassets */; };
 		0E30335829392B15001CE7D9 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30335729392B15001CE7D9 /* Persistence.swift */; };
 		0E30335B29392B15001CE7D9 /* M6_L3_Task2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0E30335929392B15001CE7D9 /* M6_L3_Task2.xcdatamodeld */; };
+		0E30336429392B39001CE7D9 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30336329392B39001CE7D9 /* MainScreen.swift */; };
+		0E30336629392B41001CE7D9 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30336529392B41001CE7D9 /* SecondScreen.swift */; };
+		0E30336829392B6C001CE7D9 /* UserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30336729392B6C001CE7D9 /* UserSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0E30334B29392B13001CE7D9 /* M6_L3_Task2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M6_L3_Task2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E30334E29392B13001CE7D9 /* M6_L3_Task2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M6_L3_Task2App.swift; sourceTree = "<group>"; };
-		0E30335029392B13001CE7D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0E30335229392B15001CE7D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E30335529392B15001CE7D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0E30335729392B15001CE7D9 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0E30335A29392B15001CE7D9 /* M6_L3_Task2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = M6_L3_Task2.xcdatamodel; sourceTree = "<group>"; };
+		0E30336329392B39001CE7D9 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		0E30336529392B41001CE7D9 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		0E30336729392B6C001CE7D9 /* UserSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,10 @@
 		0E30334D29392B13001CE7D9 /* M6_L3_Task2 */ = {
 			isa = PBXGroup;
 			children = (
+				0E30336229392B2E001CE7D9 /* screens */,
 				0E30334E29392B13001CE7D9 /* M6_L3_Task2App.swift */,
-				0E30335029392B13001CE7D9 /* ContentView.swift */,
-				0E30335229392B15001CE7D9 /* Assets.xcassets */,
 				0E30335729392B15001CE7D9 /* Persistence.swift */,
-				0E30335929392B15001CE7D9 /* M6_L3_Task2.xcdatamodeld */,
+				0E30336129392B21001CE7D9 /* apputils */,
 				0E30335429392B15001CE7D9 /* Preview Content */,
 			);
 			path = M6_L3_Task2;
@@ -71,6 +74,25 @@
 				0E30335529392B15001CE7D9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0E30336129392B21001CE7D9 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				0E30335929392B15001CE7D9 /* M6_L3_Task2.xcdatamodeld */,
+				0E30335229392B15001CE7D9 /* Assets.xcassets */,
+				0E30336729392B6C001CE7D9 /* UserSetting.swift */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		0E30336229392B2E001CE7D9 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				0E30336329392B39001CE7D9 /* MainScreen.swift */,
+				0E30336529392B41001CE7D9 /* SecondScreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E30336429392B39001CE7D9 /* MainScreen.swift in Sources */,
 				0E30335829392B15001CE7D9 /* Persistence.swift in Sources */,
 				0E30335B29392B15001CE7D9 /* M6_L3_Task2.xcdatamodeld in Sources */,
-				0E30335129392B13001CE7D9 /* ContentView.swift in Sources */,
+				0E30336829392B6C001CE7D9 /* UserSetting.swift in Sources */,
 				0E30334F29392B13001CE7D9 /* M6_L3_Task2App.swift in Sources */,
+				0E30336629392B41001CE7D9 /* SecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
